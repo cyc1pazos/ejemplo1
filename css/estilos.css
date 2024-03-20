@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+header{
+    background: url("../imagenes/fondo_arbol.jpeg") no-repeat center;
+    background-size: cover;
+    padding: 2em;
+    margin-inline: auto;
+    text-align: center;
+
+}
+
+main{
+    margin: 1em;
+}
+
+
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: blueviolet;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    margin-inline: auto;
+    text-align: center;
+    border-bottom: .1em solid rgb(0, 255, 157);
+    
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: darkgreen;
+    margin-bottom: .5em;
+    margin-inline: auto;
+    text-align: center;
+}
+
+h4{
+    color: firebrick;
+    font-weight: 700;
+    margin-bottom: .5em;
+}
+
+figcaption {
+    margin-top: .5em;
+    margin-bottom: 1.5em;
+    font-weight: 700;
+    font-style: italic;
+    color: crimson;
+}
+
+figure{
+    width: 90%;
+    margin-top: 1.5em;
+    margin-inline: auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+#Logo {
+    width: 25%;
+}
+
+li{
+    list-style: none;
+    margin: .5em;
+    padding: .5em;
+    background-color: antiquewhite;
+    border-radius: .5em;
+    width: 15em;
+    margin-inline: auto;
+}
+
+a{
+    text-decoration: none;
+    color:antiquewhite;
+    display: block;
+    margin-bottom: .5em;
+}
+
+footer{
+    background-color: olivedrab;
+    padding: 1em;
+}
+
+.iconos_footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.iconos_footer img{
+    width: 15%;
+}
+
+@media screen and (min-width: 600px){
+
+    main{
+        margin: 3em;
+    }
+
+    li{
+        font-size: 1.7em;
+        width: fit-content;
+    }
+
+    ul{
+        display: flex;
+        gap: .5em;
+        flex-wrap: wrap;
+    }
+
+    header{ 
+        display: flex;
+    }
+
+    #Logo{
+        display: flex;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 3em;
+        border: none;
+    }
+
+    h2{
+        font-size: 3em;
+    
+    }
+
+    h4{
+        font-size: 2em;
+    }
+
+    p{
+        font-size: 1.6em;
+        
+    }
+
+    .textos{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin-inline: auto;
+    }
+
+    .descripcion{
+        width: 50%;
+    }
+
+    .categoria{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap: 2em;
+        border-right: .25em solid rgb(0, 255, 157);
+        padding-right: 5em;
+        padding-left: 2em;
+        margin-block: auto;
+    }
+
+    .fotos_aves{
+        display: flex;
+        flex-wrap: wrap;
+        gap: .25em;
+        margin-top: 2em;
+    }
+
+    figure{
+        width: 42%;
+    }
+    
+    figcaption{
+        font-size: 1.35em;
+        margin-bottom: 0;
+    }
+
+    .iconos_footer img{
+        width: 12%;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer a{
+        flex-grow: 1;
+        font-size: 1.75em;
+        margin: 0;
+    }
+
+    .iconos_footer{
+        flex-grow: 5;
+    }
+    
+}
+
+@media screen and (min-width: 980px) {
+    #Logo{
+        width: 15%;
+    }
+
+    nav{
+        display: flex;
+        align-items: center;
+    }
+
+    header{
+        justify-content: space-between;
+    }
+
+    ul{
+        gap: 1.5em;
+    }
+
+    .fotos_aves{
+        display: block;
+    }
+
+    figcaption{
+        font-size: 1em;
+        width: 45%;
+    }
+
+    figure{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 75%;
+        margin-block: 6em;
+        background-color: rgb(255, 230, 175);
+        padding: 1em;
+        border-radius: .75em;
+    }
+
+    .colibri figcaption{
+        order: -1;
+    }
+
+    figure > img{
+        width: 50%;
+    }
+}
